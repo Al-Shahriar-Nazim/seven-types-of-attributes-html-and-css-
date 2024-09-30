@@ -1,0 +1,43 @@
+/* attribute selector type : 01*/
+a[target]{
+    text-decoration: none;
+}
+/* attribute selector type : 02 */
+a[class='two']{
+    text-decoration: dotted;
+    color: lightcoral;
+}
+/* attribute selector type : 03 (~ means tidel) */
+p[class~=three]{
+    width: 300px;
+    padding: 10px;
+    border: 1px solid gray;
+}
+/* attribute selector type :04 ( | means paiplines)*/
+/*
+--------------only first word selectors------------------
+ */
+p[class|='top']{
+    color: orangered;
+}
+/* attribute selector type : 05 (^ means upper sign)*/
+p[class^='attribute']{
+    color: blueviolet;
+}
+/* attribute selector type :06 ($ means dollar sign) */
+p[class$='attri']{
+    color: lightskyblue;
+    width: 280px;
+    height: 50px;
+    border: 1px solid #ddd;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+/* attribute selector types : 07 */
+p[class*='attris']{
+    color: khaki;
+    background-color: #f64df6;
+    padding: 10px;
+}
